@@ -27,7 +27,7 @@ export default function Navbar() {
           </li>
           <li>
             <NavLink
-              to="/"
+              to="/calendar"
               style={({ isActive }) =>
                 isActive ? { color: "red" } : { color: "blue" }
               }
@@ -37,17 +37,17 @@ export default function Navbar() {
           </li>
           <li>
             <NavLink
-              to="/"
+              to="/weather"
               style={({ isActive }) =>
                 isActive ? { color: "red" } : { color: "blue" }
               }
             >
-              Weather API
+              Weather
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="/"
+              to="/infopage"
               style={({ isActive }) =>
                 isActive ? { color: "red" } : { color: "blue" }
               }
@@ -61,3 +61,5 @@ export default function Navbar() {
     </div>
   );
 }
+
+/* className={({ isActive }) => (isActive ? "link-active" : "link")} */
