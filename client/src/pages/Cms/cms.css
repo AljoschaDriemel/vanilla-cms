@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+:root {
+    font-size: 1rem;
+    --dark: #333333;
+    --dark2: #3A3A3A;
+    --light: #636363;
+    --white: #F9F9F9;
+    --pink: #d63384;
+    --pink2: #FF1493;
+  }
+
+/* NAVBAR */
+.nav {
+    width: 170px;
+    height: 93vh;
+    
+    display: flex;
+    flex-direction: column;
+    float: left;
+   /*  align-items: center; */
+
+    background-color: var(--dark);
+}
+.nav ul {
+   width: 100%;
+}
+.nav li {
+    margin: 10px;
+    list-style-type: none;
+    font-size: large;
+}
+.nav a {
+    display: block;
+    
+    text-decoration: none;
+    text-align: center;
+
+    padding: 0.5em;
+    color: var(--dark);
+    
+    border: solid 3px black;
+    border-radius: 5px;
+    background-color: var(--white);
+}
+.nav a:hover {
+    /* background-color: var(--light); */
+    color: var(--dark2);
+    border-color: var(--white);
+    font-weight: 600;
+}
+
+
+
+/* Appbar */
+.appbar {
+    height: 7vh;
+    background-color: var(--dark2);
+}
+
+
+/* Specific styles for non-active links */
+.link {
+    color: white;
+  }
+  
+  /* Specific styles for active links */
+  .link-active {
+    color: black;
+    background: orange;
+  }
+  

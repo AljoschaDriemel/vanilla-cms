@@ -1,11 +1,63 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <div>
-        <h2>Navbar</h2>
-        <Link to="/">Dashboard</Link>
-        <Link to="/memberList">Member List</Link>
+      <nav className="nav">
+        <ul>
+          <li>
+            <NavLink
+              to="/"
+              style={({ isActive }) =>
+                isActive ? { color: "red" } : { color: "blue" }
+              }
+            >
+              Dashboard
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/memberList"
+              style={({ isActive }) =>
+                isActive ? { color: "red" } : { color: "blue" }
+              }
+            >
+              Member List
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/"
+              style={({ isActive }) =>
+                isActive ? { color: "red" } : { color: "blue" }
+              }
+            >
+              Calendar
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/"
+              style={({ isActive }) =>
+                isActive ? { color: "red" } : { color: "blue" }
+              }
+            >
+              Weather API
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/"
+              style={({ isActive }) =>
+                isActive ? { color: "red" } : { color: "blue" }
+              }
+            >
+              Info Page
+            </NavLink>
+          </li>
+          <li></li>
+        </ul>
+      </nav>
     </div>
   );
 }
