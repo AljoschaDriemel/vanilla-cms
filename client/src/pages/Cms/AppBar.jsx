@@ -9,11 +9,11 @@ export default function AppBar() {
     } else {
       x.style.display = "block";
     }
-  }
+  }   
   return (
     <div>
     <div className="appbar">
-     
+      <div>test</div>
         <button onClick={function1}>Click me</button>
       </div>
     </div>
