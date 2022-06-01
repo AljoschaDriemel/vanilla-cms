@@ -19,7 +19,6 @@
 .nav {
   width: 170px;
   height: 93vh;
-  
 
   display: flex;
   flex-direction: column;
@@ -56,6 +55,10 @@
   font-weight: 600;
 }
 
+#nav-container {
+  display: none;
+}
+
 /* Appbar */
 .appbar {
   height: 7vh;
@@ -64,17 +67,9 @@
 }
 
 .hamburger {
-    padding: 12px;
-    width: 65px;
-    height: 100%;
-    /* border: solid 1px red; */
-    background-color: gray;
-}
-
-.f {
-  float: right;
-}
-
-#nav-container {
-  display: none;
+  padding: 12px;
+  width: 65px;
+  height: 100%;
+  /* border: solid 1px red; */
+  background-color: gray;
 }
