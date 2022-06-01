@@ -9,12 +9,18 @@ export default function AppBar() {
     } else {
       x.style.display = "block";
     }
-  }   
+  };
   return (
     <div>
-    <div className="appbar">
-      <div>test1213</div>
-        <button onClick={function1}>Click me</button>
+      <div className="appbar">
+        <div className="hamburger">
+        <svg viewBox="0 0 100 80" width="40" height="40" onClick={function1}>
+          <rect width="100" height="20"></rect>
+          <rect y="30" width="100" height="20"></rect>
+          <rect y="60" width="100" height="20"></rect>
+        </svg>
+        </div>
+        <div className="test" style={{display:"block"}}>test</div>
       </div>
     </div>
   );
