@@ -69,3 +69,8 @@
   width: 65px;
   height: 100%;
 }
+
+.hamburger:hover {
+  opacity: 0.8;
+  background-color: #636363;
+}
