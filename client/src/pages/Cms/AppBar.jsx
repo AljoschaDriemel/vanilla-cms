@@ -13,7 +13,7 @@ export default function AppBar() {
   return (
     <div>
     <div className="appbar">
-      <div>test</div>
+      <div>test1213</div>
         <button onClick={function1}>Click me</button>
       </div>
     </div>
