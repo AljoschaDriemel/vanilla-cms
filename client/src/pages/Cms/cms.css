@@ -65,6 +65,16 @@
 
 .hamburger {
     padding: 12px;
-    width: 50px;
+    width: 65px;
     height: 100%;
+    /* border: solid 1px red; */
+    background-color: gray;
+}
+
+.f {
+  float: right;
+}
+
+#nav-container {
+  display: none;
 }

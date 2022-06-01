@@ -12,7 +12,7 @@ export default function Cms() {
   return (
     <>
       <AppBar />
-      {/* <Navbar /> */}
+      <Navbar />
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="memberList" element={<MemberList />} />
