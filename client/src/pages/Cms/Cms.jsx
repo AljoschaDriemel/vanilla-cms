@@ -12,8 +12,8 @@ import LoginForm from "../../components/LoginForm/LoginForm";
 
 export default function Cms() {
   const adminUser = {
-    email: "admin@admin",
-    password: "admin",
+    email: "a@a",
+    password: "a",
   };
 
   const [user, setUser] = useState({ name: "", email: "" });
@@ -22,10 +22,7 @@ export default function Cms() {
   const Login = (details) => {
     console.log(details);
 
-    if (
-      details.email == adminUser.email &&
-      details.password == adminUser.password
-    ) {
+    if (details.email == adminUser.email && details.password == adminUser.password) {
       console.log("Logged in");
       setUser({
         name: details.name,
@@ -50,14 +47,14 @@ export default function Cms() {
           </h2>
           <button onClick={Logout}>Logout</button>
           <AppBar />
-        <Navbar />
+          <Navbar />
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="memberList" element={<MemberList />} />
             <Route path="calendar" element={<Calendar />} />
             <Route path="weather" element={<Weather />} />
             <Route path="infopage" element={<InfoPage />} />
-          </Routes> 
+          </Routes>
         </div>
       ) : (
         <LoginForm Login={Login} error={error} />

@@ -9,11 +9,13 @@ export default function AppBar() {
   return (
     <div>
       <div className="appbar">
-        <div className="hamburger">
-          <svg viewBox="0 0 100 80" width="40" height="40" fill="#FFFFFF" onClick={toggleNavbar}>
-            <rect width="100" height="15"></rect>
-            <rect y="30" width="100" height="15"></rect>
-            <rect y="60" width="100" height="15"></rect>
+        <div className="hamburger" onClick={toggleNavbar}>
+          <svg className="hamburgerIcon" height="40" width="40">
+            <g fill="#FFF" stroke="#FFF" stroke-width="4">
+              <path stroke-linecap="round" d="M5 11 l30 0" />
+              <path stroke-linecap="round" d="M5 21 l30 0" />
+              <path stroke-linecap="round" d="M5 31 l30 0" />
+            </g>
           </svg>
         </div>
       </div>
