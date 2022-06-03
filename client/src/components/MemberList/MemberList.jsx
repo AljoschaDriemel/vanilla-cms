@@ -1,5 +1,7 @@
 export default function MemberList() {
-    return (
-        <h2>Memberlist</h2>
-    )
+  return (
+    <>
+      <h2>Member List</h2>
+    </>
+  );
 }

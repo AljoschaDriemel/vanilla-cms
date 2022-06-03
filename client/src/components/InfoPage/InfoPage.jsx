@@ -1,5 +1,7 @@
 export default function InfoPage() {
-    return (
-        <div>Info Page</div>
-    )
+  return (
+    <>
+      <h2>Info Page</h2>
+    </>
+  );
 }

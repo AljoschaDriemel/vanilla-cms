@@ -1,5 +1,7 @@
 export default function Weather() {
-    return (
-        <div>Weather</div>
-    )
+  return (
+    <>
+      <h2>Weather</h2>
+    </>
+  );
 }

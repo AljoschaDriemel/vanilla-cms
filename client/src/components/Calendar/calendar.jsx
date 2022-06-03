@@ -1,5 +1,7 @@
 export default function Calendar() {
-    return (
-        <div>Calendar</div>
-    )
+  return (
+    <>
+      <h2>Calendar</h2>
+    </>
+  );
 }
