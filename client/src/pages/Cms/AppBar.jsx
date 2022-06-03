@@ -1,15 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function AppBar() {
-  const [navbarDisplay, setNavbarDisplay] = useState("block");
-
   const toggleNavbar = () => {
     const navbar = document.getElementById("nav-container");
-    if (navbar.style.display === "block") {
-      navbar.style.display = "none";
-    } else {
-      navbar.style.display = "block";
-    }
+    return navbar.style.display === "block" ? (navbar.style.display = "none") : (navbar.style.display = "block");
   };
 
   return (

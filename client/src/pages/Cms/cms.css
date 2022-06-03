@@ -55,7 +55,7 @@
 }
 
 #nav-container {
-  display: none;
+  display: block;
 }
 
 /* Appbar */
