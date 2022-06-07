@@ -11,6 +11,6 @@ const MemberSchema = new mongoose.Schema({
   }
 });
 
-const Member = mongoose.model("Member", MemberSchema);
+const MemberModel = mongoose.model("members", MemberSchema);
 
-module.exports = { Member };
+module.exports = MemberModel
