@@ -31,18 +31,13 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li>
-<<<<<<< HEAD
             <NavLink to="/svgtestbed" style={({ isActive }) => (isActive ? { color: "red" } : { color: "blue" })}>
               SVG Testbed
-=======
-            <NavLink
-              to="/attendance"
-              style={({ isActive }) =>
-                isActive ? { color: "red" } : { color: "blue" }
-              }
-            >
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/attendance" style={({ isActive }) => (isActive ? { color: "red" } : { color: "blue" })}>
               Attendance
->>>>>>> main
             </NavLink>
           </li>
         </ul>
