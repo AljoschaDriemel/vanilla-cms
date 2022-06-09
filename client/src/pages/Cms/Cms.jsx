@@ -9,7 +9,11 @@ import Calendar from "../../components/Calendar/calendar";
 import Weather from "../../components/Weather/Weather";
 import InfoPage from "../../components/InfoPage/InfoPage";
 import LoginForm from "../../components/LoginForm/LoginForm";
+<<<<<<< HEAD
 import SvgTestbed from "../../components/SvgTestbed/SvgTestbed";
+=======
+import AttedanceList from "../../components/AttendanceList/AttendanceList";
+>>>>>>> main
 
 export default function Cms() {
   const adminUser = {
@@ -43,10 +47,10 @@ export default function Cms() {
     <div>
       {user.email !== "" ? (
         <div>
-          <h2>
+          {/* <h2>
             Welcome back, <span>{user.name}</span>
-          </h2>
-          <button onClick={Logout}>Logout</button>
+          </h2> */}
+          <button onClick={Logout} style={{position:"absolute", margin:"15px 100px", padding:"5px"}}>Logout</button>
           <AppBar />
           <Navbar />
           <Routes>
@@ -55,7 +59,11 @@ export default function Cms() {
             <Route path="calendar" element={<Calendar />} />
             <Route path="weather" element={<Weather />} />
             <Route path="infopage" element={<InfoPage />} />
+<<<<<<< HEAD
             <Route path="svgtestbed" element={<SvgTestbed />} />
+=======
+            <Route path="attendance" element={<AttedanceList />} />
+>>>>>>> main
           </Routes>
         </div>
       ) : (
