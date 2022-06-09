@@ -34,6 +34,14 @@ export default function Navbar() {
             <NavLink to="/svgtestbed" style={({ isActive }) => (isActive ? { color: "red" } : { color: "blue" })}>
               SVG Testbed
             </NavLink>
+            <NavLink
+              to="/attendance"
+              style={({ isActive }) =>
+                isActive ? { color: "red" } : { color: "blue" }
+              }
+            >
+              Attendance
+            </NavLink>
           </li>
         </ul>
       </nav>
