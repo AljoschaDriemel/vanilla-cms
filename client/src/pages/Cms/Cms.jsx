@@ -9,6 +9,7 @@ import Calendar from "../../components/Calendar/calendar";
 import Weather from "../../components/Weather/Weather";
 import InfoPage from "../../components/InfoPage/InfoPage";
 import LoginForm from "../../components/LoginForm/LoginForm";
+import AttedanceList from "../../components/AttendanceList/AttendanceList";
 
 export default function Cms() {
   const adminUser = {
@@ -54,6 +55,7 @@ export default function Cms() {
             <Route path="calendar" element={<Calendar />} />
             <Route path="weather" element={<Weather />} />
             <Route path="infopage" element={<InfoPage />} />
+            <Route path="attendance" element={<AttedanceList />} />
           </Routes>
         </div>
       ) : (

@@ -55,7 +55,16 @@ export default function Navbar() {
               Info Page
             </NavLink>
           </li>
-          <li></li>
+          <li>
+            <NavLink
+              to="/attendance"
+              style={({ isActive }) =>
+                isActive ? { color: "red" } : { color: "blue" }
+              }
+            >
+              Attendance
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </div>
