@@ -79,3 +79,7 @@
 .hamburger:hover .hamburgerIcon {
   transform: scaleX(1.15);
 }
+
+.svgTestbed {
+  padding: 40px 210px;
+}
