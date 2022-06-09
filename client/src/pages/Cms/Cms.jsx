@@ -43,10 +43,10 @@ export default function Cms() {
     <div>
       {user.email !== "" ? (
         <div>
-          <h2>
+          {/* <h2>
             Welcome back, <span>{user.name}</span>
-          </h2>
-          <button onClick={Logout}>Logout</button>
+          </h2> */}
+          <button onClick={Logout} style={{position:"absolute", margin:"15px 100px", padding:"5px"}}>Logout</button>
           <AppBar />
           <Navbar />
           <Routes>
