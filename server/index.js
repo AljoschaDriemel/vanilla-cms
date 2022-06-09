@@ -23,6 +23,7 @@ app.get("/getMembers", (req, res) => {
     });
 });
 
+
 app.post("/createMember", async (req, res) => {
   const member = req.body;
   const newMember = new MemberModel(member);
@@ -30,6 +31,11 @@ app.post("/createMember", async (req, res) => {
 
   res.json(member);
 });
+
+app.delete("/deleteMember", async () => {
+  res.send("test")
+})
+
 
 app.listen(3001, () => {
   console.log("listen on port 3001");
