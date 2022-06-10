@@ -3,11 +3,11 @@ import React from "react";
 
 export default function Login() {
     return (
-        <section className="w-full px-8 py-16 bg-gray-100 xl:px-8">
+        <section className="w-full px-8 py-16 bg-yellow-50 xl:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col items-center md:flex-row">
             <div className="w-full space-y-5 md:w-3/5 md:pr-16">
-              <p className="font-medium text-blue-500 uppercase">SPORT UNITED</p>
+              <p className="font-medium text-green-500 uppercase">SPORT UNITED</p>
               <h2 className="text-2xl font-extrabold leading-none text-black sm:text-3xl md:text-5xl">
                 Changing The Way You Organize Your Club.
               </h2>
@@ -23,17 +23,17 @@ export default function Login() {
                 <input
                   type="text"
                   name="email"
-                  className="block w-full px-4 py-3 mb-4 border border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none"
+                  className="block w-full px-4 py-3 mb-4 border border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-green-500 focus:outline-none"
                   placeholder="Email address"
                 />
                 <input
                   type="password"
                   name="password"
-                  className="block w-full px-4 py-3 mb-4 border border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none"
+                  className="block w-full px-4 py-3 mb-4 border border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-green-500 focus:outline-none"
                   placeholder="Password"
                 />
                 <div className="block">
-                  <button className="w-full px-3 py-4 font-medium text-white bg-blue-600 rounded-lg">
+                  <button className="w-full px-3 py-4 font-medium text-white bg-green-500 rounded-lg transition hover:bg-green-600">
                     Log Me In
                   </button>
                 </div>
