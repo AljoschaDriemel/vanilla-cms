@@ -12,7 +12,7 @@ export default function AttendanceList() {
     const getData = async () => {
       try {
         const response = await axios.get(
-           "/memberList/" /* `https://jsonplaceholder.typicode.com/posts?_limit=10` */
+          "http://localhost:3001/getMembers" /* `https://jsonplaceholder.typicode.com/posts?_limit=10` */
         );
         setData(response.data);
         setError(null);
@@ -42,9 +42,10 @@ export default function AttendanceList() {
       <ul>
         {data &&
           data.map(({AttendanceList, name}) => (
-              
+              <>
               <h2>{AttendanceList}</h2>
-             
+              <h3>{name}</h3>
+              </>
           ))}
       </ul>
     </div>
