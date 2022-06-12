@@ -7,7 +7,7 @@ export default function AppBar() {
   };
 
   return (
-    <div>
+    <div className="noprint">
       <div className="appbar">
         <div className="hamburger" onClick={toggleNavbar}>
           <svg className="hamburgerIcon" height="40" width="40">

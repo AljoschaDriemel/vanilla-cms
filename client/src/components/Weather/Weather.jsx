@@ -33,7 +33,7 @@ export default function Weather() {
         />
 
         {typeof weatherData.main === 'undefined' ? (
-          <>Hello new user</>
+          <></>
         ) : (
           <div>
             <p>{weatherData.name}</p>
