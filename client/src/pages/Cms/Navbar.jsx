@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div id="nav-container">
+    <div id="nav-container" className="noprint">
       <nav className="nav">
         <ul>
           <li>

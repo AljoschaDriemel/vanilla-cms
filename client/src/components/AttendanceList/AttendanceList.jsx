@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+import "./AttendanceList.css"
 
 export default function AttendanceList() {
   const [data, setData] = useState(null);
@@ -9,6 +9,8 @@ export default function AttendanceList() {
   
 
   useEffect(() => {
+    
+
     const getData = async () => {
       try {
         const response = await axios.get(
@@ -41,13 +43,19 @@ export default function AttendanceList() {
       )}
       <ul>
         {data &&
-          data.map(({AttendanceList, name}) => (
+          data.map(({AttendanceList, firstName, lastName}) => (
               <>
               <h2>{AttendanceList}</h2>
-              <h3>{name}</h3>
+              <table className="table-attendance">
+                <td>{firstName}</td>
+                <td>{lastName}</td>
+                <input type="checkbox"></input>
+              </table>
+              
               </>
           ))}
       </ul>
+          <button className="noprint" onClick={() => window.print()}> Print</button> 
     </div>
     </div>
     </div>
