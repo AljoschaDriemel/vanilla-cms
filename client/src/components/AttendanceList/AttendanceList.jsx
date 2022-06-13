@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+import "./AttendanceList.css"
 
 export default function AttendanceList() {
   const [data, setData] = useState(null);
@@ -9,10 +9,12 @@ export default function AttendanceList() {
   
 
   useEffect(() => {
+    
+
     const getData = async () => {
       try {
         const response = await axios.get(
-           "/memberList/" /* `https://jsonplaceholder.typicode.com/posts?_limit=10` */
+          "http://localhost:3001/getMembers" /* `https://jsonplaceholder.typicode.com/posts?_limit=10` */
         );
         setData(response.data);
         setError(null);
@@ -41,12 +43,19 @@ export default function AttendanceList() {
       )}
       <ul>
         {data &&
-          data.map(({AttendanceList, name}) => (
-              
+          data.map(({AttendanceList, firstName, lastName}) => (
+              <>
               <h2>{AttendanceList}</h2>
-             
+              <table className="table-attendance">
+                <td>{firstName}</td>
+                <td>{lastName}</td>
+                <input type="checkbox"></input>
+              </table>
+              
+              </>
           ))}
       </ul>
+          <button className="noprint" onClick={() => window.print()}> Print</button> 
     </div>
     </div>
     </div>

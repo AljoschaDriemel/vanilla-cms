@@ -2,7 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Courier New", Courier, monospace;
+  /* font-family: "Courier New", Courier, monospace; */
+  font-family: "Ubuntu";
 }
 
 :root {
@@ -82,4 +83,10 @@
 
 .svgTestbed {
   padding: 40px 210px;
+}
+
+@media print {
+  .noprint {
+     visibility: hidden;
+  }
 }
