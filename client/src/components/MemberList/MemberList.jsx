@@ -1,11 +1,15 @@
-
 import { useState, useEffect } from "react";
 import Axios from "axios";
+import "./MemberList.css";
 
 export default function MemberList() {
   const [listOfMembers, setListOfMembers] = useState([]);
-  const [name, setName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [age, setAge] = useState(0);
+  const [height, setHeight] = useState(0);
+  const [weight, setWeight] = useState(0);
+  const [position, setPosition] = useState("");
 
   useEffect(() => {
     Axios.get("http://localhost:3001/getMembers").then((response) => {
@@ -15,44 +19,127 @@ export default function MemberList() {
 
   const createMember = () => {
     Axios.post("http://localhost:3001/createMember", {
-      name: name,
+      firstName: firstName,
+      lastName: lastName,
       age: age,
+      height: height,
+      weight: weight,
+      position: position,
     }).then((response) => {
-      setListOfMembers([...listOfMembers, { name: name, age:age }]);
+      setListOfMembers([
+        ...listOfMembers,
+        {
+          firstName: firstName,
+          lastName: lastName,
+          age: age,
+          height: height,
+          weight: weight,
+          position: position,
+        },
+      ]);
       /* alert("MEMBER CREATED "); */
     });
   };
 
   return (
-    <div className="App">
-      <h2>Member List</h2>
-      <div className="memberDisplay">
+    <div className="member-container">
+      <h2>{/* Member List */}</h2>
+      <table className="table-member">
+        <tr style={{ background: "#eee" }}>
+          <th>FIRST NAME</th>
+          <th>LAST NAME</th>
+          <th>AGE</th>
+          <th>HEIGHT (cm)</th>
+          <th>WEIGHT (kg)</th>
+          <th>POSITION</th>
+        </tr>
+      </table>
+      <div>
         {listOfMembers.map((member) => {
           return (
             <div>
-              <p>Name: {member.name}</p>
-              <p>Age: {member.age}</p>
-              <br />
+              <table className="table-member">
+                <tr>
+                  <td>{member.firstName}</td>
+                  <td>{member.lastName}</td>
+                  <td>{member.age}</td>
+                  <td>{member.height}</td>
+                  <td>{member.weight}</td>
+                  <td>{member.position}</td>
+                </tr>
+              </table>
             </div>
           );
         })}
 
-        <div>
-          <input
-            type="text"
-            placeholder="Name... "
-            onChange={(event) => {
-              setName(event.target.value);
-            }}
-          />
-          <input
-            type="number"
-            placeholder="Age... "
-            onChange={(event) => {
-              setAge(event.target.value);
-            }}
-          />
-          <button onClick={createMember}>Create Member</button>
+        <div className="input-group">
+          <div>
+            <input
+              className="input-member"
+              type="text"
+              placeholder="First Name... "
+              onChange={(event) => {
+                setFirstName(event.target.value);
+              }}
+            />
+          </div>
+
+          <div>
+            <input
+              className="input-member"
+              type="text"
+              placeholder="Last Name... "
+              onChange={(event) => {
+                setLastName(event.target.value);
+              }}
+            />
+          </div>
+
+          <div>
+            <input
+              className="input-member"
+              type="number"
+              placeholder="Age... "
+              onChange={(event) => {
+                setAge(event.target.value);
+              }}
+            />
+          </div>
+          <div>
+            <input
+              className="input-member"
+              type="number"
+              placeholder="Height... "
+              onChange={(event) => {
+                setHeight(event.target.value);
+              }}
+            />
+          </div>
+          <div>
+            <input
+              className="input-member"
+              type="number"
+              placeholder="Weight... "
+              onChange={(event) => {
+                setWeight(event.target.value);
+              }}
+            />
+          </div>
+          <div>
+            <input
+              className="input-member"
+              type="text"
+              placeholder="Position... "
+              onChange={(event) => {
+                setPosition(event.target.value);
+              }}
+            />
+          </div>
+      <div className="btn-member">
+        <button className="btn-member" onClick={createMember}>
+          Create Member
+        </button>
+      </div>
         </div>
       </div>
     </div>

@@ -3,7 +3,8 @@ const app = express();
 const mongoose = require("mongoose");
 const MemberModel = require("./models/members")
 
-const cors = require('cors')
+const cors = require('cors');
+
 
 app.use(express.json());
 app.use(cors());
@@ -12,6 +13,9 @@ mongoose.connect(
   "mongodb+srv://admin:admin@cluster0.rxyt27g.mongodb.net/scms?retryWrites=true&w=majority"
 );
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
 app.get("/getMembers", (req, res) => {
     MemberModel.find({}, (err, result) => {
@@ -32,8 +36,10 @@ app.post("/createMember", async (req, res) => {
   res.json(member);
 });
 
-app.delete("/deleteMember", async () => {
-  res.send("test")
+app.delete("/getMember/:id", (req, res) => {
+  const { id } = req.params;
+
+  
 })
 
 
