@@ -11,9 +11,20 @@
   --dark: #333333;
   --dark2: #3a3a3a;
   --light: #636363;
-  --white: #f9f9f9;
+  --white: #f9fafb;
   --pink: #d63384;
   --pink2: #ff1493;
+
+  --darkblue: #111827;
+  --lightblue: #1f2937;
+  --green: #53ba81;
+  --yellow: #fffbeb;
+  --newblue: #38579b42;
+
+}
+
+body {
+  background-color: var(--yellow);
 }
 
 /* NAVBAR */
@@ -24,7 +35,7 @@
   flex-direction: column;
   float: left;
   /*  align-items: center; */
-  background-color: var(--dark);
+  background-color: var(--lightblue);
 }
 
 .nav ul {
@@ -43,9 +54,9 @@
   text-align: center;
   padding: 0.5em;
   color: var(--dark);
-  border: solid 3px black;
+  border: solid 1px black;
   border-radius: 5px;
-  background-color: var(--white);
+  background-color: var(--newblue);
 }
 
 .nav a:hover {
@@ -62,7 +73,7 @@
 /* Appbar */
 .appbar {
   height: 7vh;
-  background-color: var(--dark2);
+  background-color: var(--darkblue);
 }
 
 .hamburger {
@@ -89,4 +100,16 @@
   .noprint {
      visibility: hidden;
   }
+}
+
+table, input {
+  background-color: var(--white);
+}
+
+button {
+  background-color: var(--green);
+  color: var(--white);
+  border: 1px solid var(--lightblue);
+  border-radius: 0.4rem;
+
 }

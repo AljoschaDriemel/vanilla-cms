@@ -50,13 +50,13 @@ export default function Cms() {
           <button
             className="noprint"
             onClick={Logout}
-            style={{ position: "absolute", margin: "15px 100px", padding: "5px" }}
+            style={{ position: "absolute", margin:"18px 830px", padding: "7px" }}
           >
             Logout
           </button>
           <AppBar />
           <Navbar />
-          <Routes>
+          <Routes className="test">
             <Route path="/" element={<Dashboard />} />
             <Route path="memberList" element={<MemberList />} />
             <Route path="calendar" element={<Calendar />} />
