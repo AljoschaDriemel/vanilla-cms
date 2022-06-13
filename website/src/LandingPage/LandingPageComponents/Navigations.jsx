@@ -31,11 +31,14 @@ export default function Navigation() {
       </div>
       
       <a href="#_" className="md:rounded bg-gray-900 md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-800 md:inline block md:w-auto w-full">About Us</a>
-      <a href="#_" className="md:rounded bg-gray-900 md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-800 md:inline block md:w-auto w-full">Contact</a>
+
+      <div class="main" id="section9">
+      <a href="#section10" className="md:rounded bg-gray-900 md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-800 md:inline block md:w-auto w-full">Contact</a>
+      </div>
     </nav>
     <div className="flex items-center space-x-2 text-sm pr-4 font-medium text-gray-800">
-      <a href="/login" className="inline rounded bg-gray-900 px-3 py-2 text-gray-300 hover:text-gray-200 transition hover:bg-gray-800">Login</a>
-      <a href="/signUp" className="rounded bg-green-500 px-3 py-2 text-white transition hover:bg-green-600">Sign Up</a>
+      <a href="./login" className="inline rounded bg-gray-900 px-3 py-2 text-gray-300 hover:text-gray-200 transition hover:bg-gray-800">Login</a>
+      <a href="./signUp" className="rounded bg-green-500 px-3 py-2 text-white transition hover:bg-green-600">Sign Up</a>
     </div>
   </div>
 </section>

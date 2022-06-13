@@ -14,7 +14,7 @@ export default function Footer() {
             </p>
           </div>
           <a
-            href="#_"
+            href="./SignUp"
             className="inline-block px-5 py-4 font-semibold text-white rounded-lg bg-gradient-to-br from-green-600 to-green-700 hover:from-green-500 hover:to-green-700 lg:px-8"
           >
             Get Started Today

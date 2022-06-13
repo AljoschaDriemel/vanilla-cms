@@ -31,9 +31,7 @@ export default function Team() {
             <p className="text-white">Co-Founder and Frontend Developer</p>
           </div>
           <div className="relative flex items-center justify-center space-x-3">
-            <a href="#_" className="text-gray-300 hover:text-gray-400">
-            </a>
-            <a href="#_" className="text-gray-300 hover:text-gray-400">
+            <a href="https://github.com/Keston-Antonio-Schmidtgen" className="text-gray-300 hover:text-gray-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6 fill-current"
@@ -60,10 +58,7 @@ export default function Team() {
             <p className="text-white">Co-Founder and Backend Developer</p>
           </div>
           <div className="relative flex items-center justify-center space-x-3">
-            <a href="#_" className="text-gray-300 hover:text-gray-400">
-         
-            </a>
-            <a href="#_" className="text-gray-300 hover:text-gray-400">
+          <a href="https://github.com/AljoschaDriemel" className="text-gray-300 hover:text-gray-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6 fill-current"
@@ -90,10 +85,7 @@ export default function Team() {
             <p className="text-white">Co-Founder and Backend Developer</p>
           </div>
           <div className="relative flex items-center justify-center space-x-3">
-            <a href="#_" className="text-gray-300 hover:text-gray-400">
-          
-            </a>
-            <a href="#_" className="text-gray-300 hover:text-gray-400">
+            <a href="https://github.com/Dave89Rud" className="text-gray-300 hover:text-gray-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6 fill-current"
