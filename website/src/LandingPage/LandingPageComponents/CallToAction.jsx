@@ -6,7 +6,13 @@ export default function CallToAction() {
  
         
 <section className="w-full px-10 py-12 bg-white lg:py-20 bg-yellow-50">
-  <div className="relative flex max-w-5xl px-24 py-16 mx-auto bg-green-500 rounded-lg lg:py-20">
+<h2 className="w-full text-3xl font-bold text-center sm:text-4xl md:text-5xl">
+              Sign Up Now !!!
+            </h2>
+            <p className="w-full py-8 mx-auto -mt-2 text-lg text-center text-gray-700 intro sm:max-w-3xl">
+            Sports United is already used by more than 1000 managers, coaches and players, including the famous American football player and quarterback Tom Brady. 
+            </p>
+  <div className="relative flex max-w-5xl px-24 py-16 mx-auto bg-green-500 rounded-lg lg:py-20 mt-20 mb-20">
     <div className="flex">
       <div className="relative z-50 md:w-7/12">
         <svg
@@ -20,14 +26,14 @@ export default function CallToAction() {
           Saved our sport club so much time! We would highly recommend this tool
           to all other sport clubs out there.
         </blockquote>
-        <p className="mt-3 text-sm text-green-300">
+        <p className="mt-3 text-sm text-green-200">
           Tom Brady, Quarterback @TampaBayBuccaneers
         </p>
         <p className="mt-10 text-xs text-green-300">
           Want to see it in action? No credit card required.
         </p>
         <a
-          href="#_"
+          href="./SignUp"
           className="transition inline-block w-full px-10 py-3 mt-4 text-base font-medium text-center text-green-500 bg-gray-100 rounded md:w-auto"
         >
           Start your free 14-day trial

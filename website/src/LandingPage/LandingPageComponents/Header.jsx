@@ -18,11 +18,12 @@ export default function Header() {
                 Start organizing and managing your teams easier and quicker than ever
                 before.
               </p>
+              <br />
               <div className="relative">
-                <button className="rounded-lg px-6 py-5 text-xl font-medium leading-5 text-center text-white capitalize bg-green-500 hover:bg-green-600 focus:outline-none lg:mx-0 lg:w-auto">
+                <a  href="./SignUp" className="rounded-lg px-6 py-5 text-xl font-medium leading-5 text-center text-white capitalize bg-green-500 hover:bg-green-600 focus:outline-none lg:mx-0 lg:w-auto">
                   Start 14-Day Free Trial
-                </button>
-                <p className="mt-3 text-sm text-left text-gray-400 sm:text-center">
+                </a>
+                <p className="mt-3 text-sm text-left text-gray-400 sm:text-center"><br />
                   No credit card required
                 </p>
               </div>
