@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "FC Bayern München",
+    "score": 77,
+    "goals": 97,
+    "color": "#DC052D"
+  },
+  {
+    "id": 2,
+    "title": "Borussia Dortmund",
+    "score": 69,
+    "goals": 85,
+    "color": "#FFE600"
+  },
+  {
+    "id": 3,
+    "title": "Bayer 04 Leverkusen",
+    "score": 64,
+    "goals": 80,
+    "color": "#FF0000"
+  },
+  {
+    "id": 4,
+    "title": "RB Leipzig",
+    "score": 58,
+    "goals": 72,
+    "color": "#FFFFFF"
+  },
+  {
+    "id": 5,
+    "title": "1. FC Union Berlin",
+    "score": 57,
+    "goals": 50,
+    "color": "#E30613"
+  }
+]

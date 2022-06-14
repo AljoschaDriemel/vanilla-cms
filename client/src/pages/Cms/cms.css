@@ -30,7 +30,6 @@ body {
 /* NAVBAR */
 .nav {
   width: 170px;
-  height: 93vh;
   display: flex;
   flex-direction: column;
   float: left;
@@ -119,4 +118,6 @@ button:hover {
   border-color: #53ba81;
 }
 
-
+.heading-margin {
+  margin-top: 70px;
+}
