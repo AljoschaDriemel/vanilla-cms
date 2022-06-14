@@ -6,32 +6,32 @@ export default function Navbar() {
       <nav className="nav">
         <ul>
           <li>
-            <NavLink to="/" style={({ isActive }) => (isActive ? { color: "#53ba81" } : { color: "#f9fafb" })}>
+            <NavLink to="/" style={({ isActive }) => (isActive ? { color: "#53ba81", borderColor:"#53ba81" } : { color: "#f9fafb" })}>
               Dashboard
             </NavLink>
           </li>
           <li>
-            <NavLink to="/memberList" style={({ isActive }) => (isActive ? { color: "#53ba81" } : { color: "#f9fafb" })}>
+            <NavLink to="/memberList" style={({ isActive }) => (isActive ? { color: "#53ba81", borderColor:"#53ba81", borderColor:"#53ba81" } : { color: "#f9fafb" })}>
               Member List
             </NavLink>
           </li>
           <li>
-            <NavLink to="/calendar" style={({ isActive }) => (isActive ? { color: "#53ba81" } : { color: "#f9fafb" })}>
+            <NavLink to="/calendar" style={({ isActive }) => (isActive ? { color: "#53ba81", borderColor:"#53ba81" } : { color: "#f9fafb" })}>
               Calendar
             </NavLink>
           </li>
           <li>
-            <NavLink to="/weather" style={({ isActive }) => (isActive ? { color: "#53ba81" } : { color: "#f9fafb" })}>
+            <NavLink to="/weather" style={({ isActive }) => (isActive ? { color: "#53ba81", borderColor:"#53ba81" } : { color: "#f9fafb" })}>
               Weather
             </NavLink>
           </li>
           <li>
-            <NavLink to="/infopage" style={({ isActive }) => (isActive ? { color: "#53ba81" } : { color: "#f9fafb" })}>
+            <NavLink to="/infopage" style={({ isActive }) => (isActive ? { color: "#53ba81", borderColor:"#53ba81" } : { color: "#f9fafb" })}>
               Info Page
             </NavLink>
           </li>
           <li>
-            <NavLink to="/svgtestbed" style={({ isActive }) => (isActive ? { color: "#53ba81" } : { color: "#f9fafb" })}>
+            <NavLink to="/svgtestbed" style={({ isActive }) => (isActive ? { color: "#53ba81", borderColor:"#53ba81" } : { color: "#f9fafb" })}>
               SVG Testbed
             </NavLink>
           </li>
