@@ -1,4 +1,5 @@
 import React from "react";
+import scoreData from "./clubscores.json";
 
 export default function SvgTestbed() {
   const teamRed = 80; // Percentage Values: Change the values (0 to 100) and see how the Diagram changes!
@@ -35,6 +36,46 @@ export default function SvgTestbed() {
             Team Purple: {teamPurple}%
           </tspan>
         </text>
+      </svg>
+
+      <h3 className="heading-margin">Bundesliga Table | Season 2021-2022</h3>
+      <br />
+      {scoreData &&
+        scoreData.map((club) => {
+          return (
+            <tr key={club.id}>
+              <td>{club.id + ". |"}</td>
+              <td>{club.title + " |"}</td>
+              <td>{club.score + " |"}</td>
+              <td>{club.goals}</td>
+            </tr>
+          );
+        })}
+      <br />
+      <svg width="610" height={scoreData.length * 81} fill="none">
+        <rect width="610" height={scoreData.length * 81} fill="none" stroke="lightgray" stroke-width="10" />
+        {scoreData &&
+          scoreData.map((club) => {
+            return (
+              <>
+                <text x="25" y={40 + 75 * scoreData.indexOf(club)} fill="black" fontWeight="bold">
+                  {`${club.id}. | ${club.title}`}
+                </text>
+                <rect
+                  x="5"
+                  y={55 + 75 * scoreData.indexOf(club)}
+                  width={club.score * 4}
+                  height="25"
+                  fill={club.color}
+                  stroke-width="1"
+                  stroke="lightgray"
+                />
+                <text x="50" y={73 + 75 * scoreData.indexOf(club)} fill="black" fontSize="14" fontStyle="italic">
+                  {`Score: ${club.score}`}
+                </text>
+              </>
+            );
+          })}
       </svg>
     </div>
   );
