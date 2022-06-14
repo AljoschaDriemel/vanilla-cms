@@ -16,6 +16,7 @@ export default function LandingPageRoutes() {
         <div>
    
 
+
    <Header />
     <Content />
     <Logos />
