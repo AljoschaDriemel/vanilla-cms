@@ -12,10 +12,10 @@ export default function Header() {
           <div className="pt-24 mx-auto text-center max-w-7xl">
             <div className="flex flex-col items-start max-w-3xl mx-auto space-y-8 sm:block">
               <h1 className="text-5xl font-bold text-left text-green-500 sm:text-6xl sm:text-center lg:text-7xl xl:text-8xl">
-                Organize your sport teams for better management
+                Organize your sport team for better management
               </h1>
               <p className="max-w-lg mx-auto text-xl leading-relaxed text-left text-gray-500 sm:text-center">
-                Start organizing and managing your teams easier and quicker than ever
+                Start organizing and managing your team easier and quicker than ever
                 before.
               </p>
               <br />

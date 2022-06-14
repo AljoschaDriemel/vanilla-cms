@@ -1,4 +1,9 @@
+/* eslint-disable no-restricted-globals */
+/* eslint-disable no-undef */
 import React from "react";
+
+
+// The following example POSTS data to mailthis.to, redirects the user to a confirmation page, and then sends an email (upon the successful completion of Recaptcha verification)
 
 
 export default function Contact() {
@@ -26,33 +31,37 @@ export default function Contact() {
         Fill out the contact form below and we'll get back to you within 24-48 hours. 
       </p>
     </div>
-    <form className="grid max-w-3xl gap-4 mx-auto sm:grid-cols-2">
-      <div className>
+    <form className="grid max-w-3xl gap-4 mx-auto sm:grid-cols-2" action="https://mailthis.to/keston.antonio.schmidtgen@gmail.com"
+    method="POST">
+      <div className="">
         <label htmlFor="first-name" className="inline-block mb-2 text-sm font-medium text-gray-500 sm:text-base">First name</label>
-        <input name="first-name" className="w-full px-3 py-2 text-gray-800 transition duration-100 border rounded-md outline-none bg-gray-50 focus:ring ring-blue-300" />
+        <input type="text" name="first-name" className="w-full px-3 py-2 text-gray-800 transition duration-100 border rounded-md outline-none bg-gray-50 focus:ring ring-blue-300" />
       </div>
       <div className>
         <label htmlFor="last-name" className="inline-block mb-2 text-sm font-medium text-gray-500 sm:text-base">Last name</label>
-        <input name="last-name" className="w-full px-3 py-2 text-gray-800 transition duration-100 border rounded-md outline-none bg-gray-50 focus:ring ring-blue-300" />
+        <input type="text" name="last-name" className="w-full px-3 py-2 text-gray-800 transition duration-100 border rounded-md outline-none bg-gray-50 focus:ring ring-blue-300" />
       </div>
       <div className="sm:col-span-2">
         <label htmlFor="company" className="inline-block mb-2 text-sm font-medium text-gray-500 sm:text-base">Company</label>
-        <input name="company" className="w-full px-3 py-2 text-gray-800 transition duration-100 border rounded-md outline-none bg-gray-50 focus:ring ring-blue-300" />
+        <input type="text" name="company" className="w-full px-3 py-2 text-gray-800 transition duration-100 border rounded-md outline-none bg-gray-50 focus:ring ring-blue-300" />
       </div>
       <div className="sm:col-span-2">
         <label htmlFor="email" className="inline-block mb-2 text-sm font-medium text-gray-500 sm:text-base">Email</label>
-        <input name="email" className="w-full px-3 py-2 text-gray-800 transition duration-100 border rounded-md outline-none bg-gray-50 focus:ring ring-blue-300" />
+        <input type="email" name="replyto" className="w-full px-3 py-2 text-gray-800 transition duration-100 border rounded-md outline-none bg-gray-50 focus:ring ring-blue-300" />
       </div>
       <div className="sm:col-span-2">
         <label htmlFor="subject" className="inline-block mb-2 text-sm font-medium text-gray-500 sm:text-base">Subject</label>
-        <input name="subject" className="w-full px-3 py-2 text-gray-800 transition duration-100 border rounded-md outline-none bg-gray-50 focus:ring ring-blue-300" />
+        <input  name="subject"  className="w-full px-3 py-2 text-gray-800 transition duration-100 border rounded-md outline-none bg-gray-50 focus:ring ring-blue-300" />
       </div>
       <div className="sm:col-span-2">
         <label htmlFor="message" className="inline-block mb-2 text-sm font-medium text-gray-500 sm:text-base">Message</label>
-        <textarea name="message" className="w-full h-64 px-3 py-2 text-gray-800 transition duration-100 border rounded-md outline-none bg-gray-50 focus:ring ring-blue-300" style={{"height":"111px"}} defaultValue={""} />
+        <textarea type="message" name="message" placeholder="Enter your message here .  .  ." className="w-full h-64 px-3 py-2 text-gray-800 transition duration-100 border rounded-md outline-none bg-gray-50 focus:ring ring-blue-300" style={{"height":"111px"}} defaultValue={""} />
       </div>
       <div className="flex items-center justify-between sm:col-span-2">
-        <button className="inline-block px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 rounded-md outline-none active:bg-blue-700 ring-blue-300 md:text-base bg-green-500 hover:bg-green-600">Send Message</button>
+        <button type="submit" value="Send" className="inline-block px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 rounded-md outline-none active:bg-blue-700 ring-blue-300 md:text-base bg-green-500 hover:bg-green-600">Send Message</button>
+        <input type="hidden" name="honeypot" value="" />
+       <input type="hidden" name="confirmation" value="Your message to Sport United has been sent!" />
+      
       </div>
     </form>
     <p className="max-w-3xl mx-auto mt-5 text-xs text-gray-400 pb-10">We will respond within 48 Hours during weekdays. </p>

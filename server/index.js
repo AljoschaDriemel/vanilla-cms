@@ -43,7 +43,7 @@ app.delete("/getMember/:id", (req, res) => {
 })
 
 
-app.listen(3001, () => {
-  console.log("listen on port 3001");
+app.listen(5000, () => {
+  console.log("listen on port 5000");
 });
 

@@ -32,7 +32,7 @@ export default function Pricing() {
           </p>
         </div>
         <p className="mt-6 mb-5 text-base leading-normal text-left text-gray-900 border-0 border-gray-200">
-          Ideal for Startups and Small Companies
+          Ideal for small sport clubs
         </p>
         <ul className="flex-1 p-0 mt-4 ml-5 leading-7 text-gray-900 border-0 border-gray-200">
           <li className="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
@@ -107,8 +107,7 @@ export default function Pricing() {
           </p>
         </div>
         <p className="mt-6 mb-5 text-base leading-normal text-left text-gray-900 border-0 border-gray-200">
-          Ideal for medium-size businesses to larger businesses
-        </p>
+          Ideal for medium-size sport clubs to larger clubs</p>
         <ul className="flex-1 p-0 mt-4 leading-7 text-gray-900 border-0 border-gray-200">
           <li className="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
             <svg
@@ -200,7 +199,7 @@ export default function Pricing() {
           </p>
         </div>
         <p className="mt-6 mb-5 text-base leading-normal text-left text-gray-900 border-0 border-gray-200">
-          Ideal for larger and enterprise companies
+          Ideal for larger and professional sport clubs
         </p>
         <ul className="flex-1 p-0 mt-4 leading-7 text-gray-900 border-0 border-gray-200">
           <li className="inline-flex items-center block w-full mb-2 ml-5 font-semibold text-left border-solid">
@@ -270,7 +269,7 @@ export default function Pricing() {
                 className=""
               />
             </svg>
-            Company Evaluations
+            Customized Components
           </li>
         </ul>
         <button className="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-green-600 no-underline bg-transparent border border-green-600 rounded-md cursor-pointer hover:bg-green-700 hover:border-green-700 hover:text-white focus-within:bg-green-700 focus-within:border-green-700 focus-within:text-white sm:text-base md:text-lg">

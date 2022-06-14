@@ -3,7 +3,8 @@ import React from "react";
 
 export default function Login() {
     return (
-        <section className="w-full px-8 py-16 bg-yellow-50 xl:px-8">
+      
+        <section className="w-full px-8 py-96 pb-96 pt-20 bg-yellow-50 xl:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col items-center md:flex-row">
             <div className="w-full space-y-5 md:w-3/5 md:pr-16">
@@ -38,6 +39,7 @@ export default function Login() {
           </div>
         </div>
       </section>
+    
       
     
     )

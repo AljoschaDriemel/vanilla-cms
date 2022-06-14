@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -19,7 +20,7 @@ export default function Navigation() {
     <nav className="md:relative md:w-auto w-full md:mt-0 mt-16 translate-y-2 md:translate-y-0 top-0 md:pb-0 pb-3 bg-gray-900 md:bg-transparent absolute items-center md:space-x-2 text-sm font-medium text-gray-300 md:flex hidden ">
       
     <div class="main" id="section1">
-       <a href="#section2" className="md:rounded bg-gray-900 md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-800 md:inline block md:w-auto w-full">Home</a>
+       <a href="/" className="md:rounded bg-gray-900 md:px-3 px-5 md:py-2 py-3 transition hover:bg-gray-800 md:inline block md:w-auto w-full">Home</a>
       </div>
 
       <div class="main" id="section3">
@@ -39,6 +40,7 @@ export default function Navigation() {
     <div className="flex items-center space-x-2 text-sm pr-4 font-medium text-gray-800">
       <a href="./login" className="inline rounded bg-gray-900 px-3 py-2 text-gray-300 hover:text-gray-200 transition hover:bg-gray-800">Login</a>
       <a href="./signUp" className="rounded bg-green-500 px-3 py-2 text-white transition hover:bg-green-600">Sign Up</a>
+     
     </div>
   </div>
 </section>

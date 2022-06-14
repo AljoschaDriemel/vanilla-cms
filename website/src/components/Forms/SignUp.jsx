@@ -4,7 +4,7 @@ import React from "react";
 export default function SignUp() {
     return (
       
-      <section className="w-full bg-yellow-50 pt-20 pb-20">
+      <section className="w-full bg-yellow-50 pt-70 pb-96 ">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col lg:flex-row">
           <div className="relative w-full bg-cover lg:w-6/12 xl:w-7/12 bg-yellow-50">
@@ -12,16 +12,16 @@ export default function SignUp() {
               <div className="flex flex-col items-start space-y-8 tracking-tight lg:max-w-3xl">
                 <div className="relative">
                   <p className="mb-2 font-medium text-green-500 uppercase">Sport United</p>
-                  <h2 className="text-5xl font-bold text-gray-900 xl:text-6xl">Create your team in a few clicks.</h2>
+                  <h2 className="text-2xl font-extrabold leading-none text-black sm:text-3xl md:text-5xl">Create your team in a few clicks.</h2>
                 </div>
-                <p className="text-2xl text-gray-700">This account is personal and will enable you to manage your team.</p>
-                <a href="#_" className="inline-block px-8 py-5 text-xl font-medium text-center text-white transition duration-200 bg-green-500 rounded-lg hover:bg-green-600 ease">Get Started Today</a>
+                <p className="text-xl text-gray-600 md:pr-16">This account is personal and will enable you to manage your team.</p>
+                <a href="#_" className="inline-block px-8 py-4 text-xl font-medium text-center text-white transition duration-200 bg-green-500 rounded-lg hover:bg-green-600 ease">Get Started Today</a>
               </div>
             </div>
           </div>
       
-                  <div className="w-full mt-16 md:mt-0 md:w-2/5">
-        <div className="relative z-10 h-auto p-8 py-10 overflow-hidden bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7">
+                  <div className="w-full mt-16 md:mt-10  md:w-2/5">
+        <div className="relative z-10 h-auto p-8 py-5 overflow-hidden bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7">
           <div className="overflow-hidden text-center bg-white rounded-md shadow-sm">
             <div className="px-6 py-8">
               <form onsubmit="event.preventDefault();" className>

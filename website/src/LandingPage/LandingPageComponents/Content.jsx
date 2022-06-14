@@ -11,8 +11,7 @@ export default function Content() {
               What Our Features Offer.
             </h2>
             <p className="w-full py-8 mx-auto -mt-2 text-lg text-center text-gray-700 intro sm:max-w-3xl">
-              Add some nice touches to your CMS with our latest design and features.
-              We've crafted a beautiful user experience that your visitors will love.
+            Enhance your team profile with our latest design and features. Coaches are sure to appreciate the smooth user interface we built.
             </p>
           </div>
           <div className="flex flex-col mb-8 animated fadeIn sm:flex-row">
@@ -26,11 +25,10 @@ export default function Content() {
             <div className="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
               
               <h3 className="mt-2 text-2xl sm:text-left md:text-4xl">
-                Organize Your Sport Teams
+                Organize Your Sport Team
               </h3>
               <p className="mt-5 text-lg text-gray-700 text md:text-left">
-                Use our tool you are able to organize and manage your teams much
-                better and faster.
+              Utilize our tool to organize and manage your sport team much more efficiently and effectively.
               </p>
               <br />
               <div className="flex items-center space-x-2 text-lg pr-4 font-medium text-gray-800">
@@ -52,8 +50,7 @@ export default function Content() {
                 No More Excel Horror
               </h3>
               <p className="mt-5 text-lg text-gray-700 text md:text-left">
-                The idea of just using Excel is a nightmare. Our tool will make
-                management much easier.{" "}
+              Using Excel alone is a nightmare, and our tool will make management much easier.
               </p>
               <br />
               <div className="flex items-center space-x-2 text-lg pr-4 font-medium text-gray-800">
@@ -75,7 +72,7 @@ export default function Content() {
                 Create Your Own Calender
               </h3>
               <p className="mt-5 text-lg text-gray-700 text md:text-left">
-                Our calendar are fully customizable and interactive.{" "}
+              We offer an interactive and fully customizable calendar.
               </p>
               <br />
               <div className="flex items-center space-x-2 text-lg pr-4 font-medium text-gray-800">
