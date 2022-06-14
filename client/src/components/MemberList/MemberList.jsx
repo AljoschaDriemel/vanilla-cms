@@ -17,6 +17,10 @@ export default function MemberList() {
     });
   }, []);
 
+  const deleteMember = () => {
+    Axios.delete("http://localhost:3001/getMember/:id");
+  };
+
   const createMember = () => {
     Axios.post("http://localhost:3001/createMember", {
       firstName: firstName,
@@ -43,7 +47,6 @@ export default function MemberList() {
 
   return (
     <div className="member-container">
-      <h2>{/* Member List */}</h2>
       <table className="table-member">
         <tr style={{ background: "#eee" }}>
           <th>FIRST NAME</th>
@@ -52,6 +55,7 @@ export default function MemberList() {
           <th>HEIGHT (cm)</th>
           <th>WEIGHT (kg)</th>
           <th>POSITION</th>
+          <th></th>
         </tr>
       </table>
       <div>
@@ -66,6 +70,11 @@ export default function MemberList() {
                   <td>{member.height}</td>
                   <td>{member.weight}</td>
                   <td>{member.position}</td>
+                  <td>
+                    <button className="btn-del" onClick={deleteMember}>
+                      X
+                    </button>
+                  </td>
                 </tr>
               </table>
             </div>
@@ -135,11 +144,11 @@ export default function MemberList() {
               }}
             />
           </div>
-      <div className="btn-member">
-        <button className="btn-member" onClick={createMember}>
-          Create Member
-        </button>
-      </div>
+          <div className="btn-member">
+            <button className="btn-member" onClick={createMember}>
+              Create Member
+            </button>
+          </div>
         </div>
       </div>
     </div>

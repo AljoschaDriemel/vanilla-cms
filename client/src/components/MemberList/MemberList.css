@@ -33,15 +33,24 @@
     width: 70%;
     
   }
+
   
  .table-member td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-    min-width: 80px;
-    max-width: 80px;
-    
+    min-width: 110px;
+    max-width: 110px;
   }
+  .table-member td:last-child, th:last-child {
+   background-color: #fffbeb;
+   min-width: 0;
+   min-height: 0;
+   border: none;
+  }
+  .table-member th:last-child {
+    padding: 18.2px;
+   }
   
 .member-container {
   margin-top: 20px;
@@ -53,3 +62,14 @@
  justify-content: center;
  font-weight: bold;
 }
+
+.btn-del {
+  padding: 5px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+

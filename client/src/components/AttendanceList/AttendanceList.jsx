@@ -55,7 +55,7 @@ export default function AttendanceList() {
               </>
           ))}
       </ul>
-          <button className="noprint" onClick={() => window.print()}> Print</button> 
+          <button id="btn-att" className="noprint" onClick={() => window.print()}> Print</button> 
     </div>
     </div>
     </div>

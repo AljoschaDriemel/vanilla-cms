@@ -13,7 +13,7 @@ import SvgTestbed from "../../components/SvgTestbed/SvgTestbed";
 import AttendanceList from "../../components/AttendanceList/AttendanceList";
 
 export default function Cms() {
-  const adminUser = {
+ /*  const adminUser = {
     email: "a@a",
     password: "a",
   };
@@ -38,19 +38,25 @@ export default function Cms() {
 
   const Logout = () => {
     setUser({ name: "", email: "" });
-  };
+  }; */
 
   return (
     <div>
-      {user.email !== "" ? (
+      {/* {user.email !== "" ? ( */}
         <div>
           {/* <h2>
             Welcome back, <span>{user.name}</span>
           </h2> */}
-          <button className="noprint" onClick={Logout} style={{position:"absolute", margin:"15px 100px", padding:"5px"}}>Logout</button>
+          <button
+            className="noprint"
+            /* onClick={Logout} */
+            style={{ position: "absolute", margin:"18px 830px", padding: "7px" }}
+          >
+            Logout
+          </button>
           <AppBar />
           <Navbar />
-          <Routes>
+          <Routes className="test">
             <Route path="/" element={<Dashboard />} />
             <Route path="memberList" element={<MemberList />} />
             <Route path="calendar" element={<Calendar />} />
@@ -60,9 +66,9 @@ export default function Cms() {
             <Route path="attendance" element={<AttendanceList />} />
           </Routes>
         </div>
-      ) : (
+     {/* )  : (
         <LoginForm Login={Login} error={error} />
-      )}
+      )} */}
     </div>
   );
 }

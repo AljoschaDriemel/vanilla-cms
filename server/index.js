@@ -36,10 +36,23 @@ app.post("/createMember", async (req, res) => {
   res.json(member);
 });
 
+
+
+MemberModel.findByIdAndRemove({  }, (error, deletedRecord) => {
+  if (!error) {
+    console.log(deletedRecord);
+  }
+})
+
 app.delete("/getMember/:id", (req, res) => {
   const { id } = req.params;
 
-  
+  MemberModel.findByIdAndRemove(id, (error, deletedRecord) => {
+    if (!error) {
+      console.log(deletedRecord);
+    }
+  })
+
 })
 
 
