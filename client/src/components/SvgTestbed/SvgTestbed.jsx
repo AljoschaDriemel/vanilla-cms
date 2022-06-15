@@ -1,5 +1,6 @@
 import React from "react";
 import scoreData from "./clubscores.json";
+import "./SvgTestbed.css"
 
 export default function SvgTestbed() {
   const teamRed = 80; // Percentage Values: Change the values (0 to 100) and see how the Diagram changes!
@@ -9,6 +10,7 @@ export default function SvgTestbed() {
   const teamPurple = 70;
 
   return (
+    <div className="content-container">
     <div className="svgTestbed">
       <h2>SVG Test Page</h2>
       <br />
@@ -77,6 +79,7 @@ export default function SvgTestbed() {
             );
           })}
       </svg>
+    </div>
     </div>
   );
 }

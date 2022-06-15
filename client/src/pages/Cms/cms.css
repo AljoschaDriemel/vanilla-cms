@@ -39,6 +39,7 @@ body {
 
 .nav ul {
   width: 100%;
+  height: 93vh;
 }
 
 .nav li {
@@ -75,6 +76,7 @@ body {
   background-color: var(--darkblue);
 }
 
+/* Hamburger */
 .hamburger {
   padding: 12px;
   width: 65px;
@@ -90,10 +92,6 @@ body {
 
 .hamburger:hover .hamburgerIcon {
   transform: scaleX(1.15);
-}
-
-.svgTestbed {
-  padding: 40px 210px;
 }
 
 @media print {

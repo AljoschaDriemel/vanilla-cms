@@ -38,12 +38,6 @@ app.post("/createMember", async (req, res) => {
 
 
 
-MemberModel.findByIdAndRemove({  }, (error, deletedRecord) => {
-  if (!error) {
-    console.log(deletedRecord);
-  }
-})
-
 app.delete("/getMember/:id", (req, res) => {
   const { id } = req.params;
 
@@ -56,7 +50,7 @@ app.delete("/getMember/:id", (req, res) => {
 })
 
 
-app.listen(5000, () => {
-  console.log("listen on port 5000");
+app.listen(3001, () => {
+  console.log("listen on port 3001");
 });
 

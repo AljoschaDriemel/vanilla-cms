@@ -42,18 +42,11 @@ export default function Cms() {
 
   return (
     <div>
-      {/* {user.email !== "" ? ( */}
+      
         <div>
-          {/* <h2>
-            Welcome back, <span>{user.name}</span>
-          </h2> */}
-          <button
-            className="noprint"
-            /* onClick={Logout} */
-            style={{ position: "absolute", margin:"18px 830px", padding: "7px" }}
-          >
-            Logout
-          </button>
+          
+          
+        
           <AppBar />
           <Navbar />
           <Routes className="test">
@@ -66,9 +59,7 @@ export default function Cms() {
             <Route path="attendance" element={<AttendanceList />} />
           </Routes>
         </div>
-     {/* )  : (
-        <LoginForm Login={Login} error={error} />
-      )} */}
+     
     </div>
   );
 }
