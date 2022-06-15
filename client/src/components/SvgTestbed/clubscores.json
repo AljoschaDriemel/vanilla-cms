@@ -33,5 +33,96 @@
     "score": 57,
     "goals": 50,
     "color": "#E30613"
+  },
+  {
+    "id": 6,
+    "title": "SC Freiburg",
+    "score": 55,
+    "goals": 58,
+    "color": "#E4002B"
+  },
+  {
+    "id": 7,
+    "title": "1. FC Köln",
+    "score": 52,
+    "goals": 52,
+    "color": "#FF0000"
+  },
+  {
+    "id": 8,
+    "title": "1. FSV Mainz 05",
+    "score": 46,
+    "goals": 50,
+    "color": "#E30613"
+  },
+  {
+    "id": 9,
+    "title": "TSG Hoffenheim",
+    "score": 46,
+    "goals": 58,
+    "color": "#1F5DA6"
+  },
+  {
+    "id": 10,
+    "title": "Borussia M'gladbach",
+    "score": 45,
+    "goals": 54,
+    "color": "#FFFFFF"
+  },
+  {
+    "id": 11,
+    "title": "Eintracht Frankfurt",
+    "score": 42,
+    "goals": 45,
+    "color": "#FFFFFF"
+  },
+  {
+    "id": 12,
+    "title": "VfL Wolfsburg",
+    "score": 42,
+    "goals": 43,
+    "color": "#64B42D"
+  },
+  {
+    "id": 13,
+    "title": "VfL Bochum 1848",
+    "score": 42,
+    "goals": 38,
+    "color": "#1456A2"
+  },
+  {
+    "id": 14,
+    "title": "FC Augsburg",
+    "score": 38,
+    "goals": 39,
+    "color": "#CD1719"
+  },
+  {
+    "id": 15,
+    "title": "VfB Stuttgart",
+    "score": 33,
+    "goals": 41,
+    "color": "#FFFFFF"
+  },
+  {
+    "id": 16,
+    "title": "Hertha BSC",
+    "score": 33,
+    "goals": 37,
+    "color": "#0069B4"
+  },
+  {
+    "id": 17,
+    "title": "Arminia Bielefeld",
+    "score": 28,
+    "goals": 27,
+    "color": "#FFFFFF"
+  },
+  {
+    "id": 18,
+    "title": "SpVgg Greuther Fürth",
+    "score": 18,
+    "goals": 28,
+    "color": "#009932"
   }
 ]
