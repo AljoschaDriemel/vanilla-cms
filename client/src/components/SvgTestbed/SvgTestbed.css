@@ -1,0 +1,8 @@
+.svgTestbed {
+    padding: 40px 15px;
+  }
+  .content-container {
+    min-height: 90vh;
+    max-height: 93vh;
+    overflow: scroll;
+  }
