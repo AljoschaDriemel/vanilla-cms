@@ -42,20 +42,9 @@ export default function SvgTestbed() {
 
       <h3 className="heading-margin">Bundesliga Table | Season 2021-2022</h3>
       <br />
-      {scoreData &&
-        scoreData.map((club) => {
-          return (
-            <tr key={club.id}>
-              <td>{club.id + ". |"}</td>
-              <td>{club.title + " |"}</td>
-              <td>{club.score + " |"}</td>
-              <td>{club.goals}</td>
-            </tr>
-          );
-        })}
       <br />
-      <svg width="610" height={scoreData.length * 81} fill="none">
-        <rect width="610" height={scoreData.length * 81} fill="none" stroke="lightgray" stroke-width="10" />
+      <svg width="810" height={scoreData.length * 78} fill="whitesmoke">
+        <rect width="810" height={scoreData.length * 78} fill="whitesmoke" stroke="lightgray" stroke-width="10" />
         {scoreData &&
           scoreData.map((club) => {
             return (
@@ -72,8 +61,20 @@ export default function SvgTestbed() {
                   stroke-width="1"
                   stroke="lightgray"
                 />
-                <text x="50" y={73 + 75 * scoreData.indexOf(club)} fill="black" fontSize="14" fontStyle="italic">
+                <text x="50" y={72 + 75 * scoreData.indexOf(club)} fill="black" fontSize="14" fontStyle="italic">
                   {`Score: ${club.score}`}
+                </text>
+                <rect
+                  x="405"
+                  y={55 + 75 * scoreData.indexOf(club)}
+                  width={club.goals * 4}
+                  height="25"
+                  fill={club.color}
+                  stroke-width="1"
+                  stroke="lightgray"
+                />
+                <text x="450" y={72 + 75 * scoreData.indexOf(club)} fill="black" fontSize="14" fontStyle="italic">
+                  {`Goals: ${club.goals}`}
                 </text>
               </>
             );
